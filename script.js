@@ -28,12 +28,12 @@ function update() {
   let str = "";
   itemJsonArray.forEach((element, index) => {
     str += `
-                          <tr>
-                        <th scope="row">${index + 1}</th>
-                        <td>${element[0]}</td>
-                        <td>${element[1]}</td> 
-                        <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
-                        </tr>`;
+            <tr>
+            <th scope="row">${index + 1}</th>
+            <td>${element[0]}</td>
+            <td>${element[1]}</td> 
+            <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
+            </tr>`;
   });
   tableBody.innerHTML = str;
 }
